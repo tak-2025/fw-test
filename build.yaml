@@ -2,6 +2,7 @@ include:
   - board: bmp_boost
     shield: torabo_tsuki_lp_right
     snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-trackpad-ext torabo-trackpad-live-ext input-split-listener input-encoder-recv torabo-encoder-live torabo-encoder-btn-recv torabo-trackpad-live-split torabo-led-live torabo-caps torabo-live-feed torabo-trackball torabo-macros torabo-combos torabo-reserved-layers"
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DTORABO_RESERVED_LAYERS=10"
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
