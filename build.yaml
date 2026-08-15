@@ -1,11 +1,11 @@
 include:
   - board: bmp_boost
     shield: torabo_tsuki_lp_right
-    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-trackpad-ext torabo-trackpad-live-ext input-split-listener input-encoder-recv torabo-encoder-live torabo-encoder-btn-recv torabo-trackpad-live-split torabo-status-led-ext torabo-caps torabo-live-feed torabo-trackball torabo-macros torabo-combos torabo-reserved-layers"
+    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-trackpad-ext torabo-trackpad-live-ext input-split-listener input-encoder-recv torabo-encoder-live torabo-encoder-btn-recv torabo-trackpad-live-split torabo-led-live torabo-caps torabo-live-feed torabo-trackball torabo-macros torabo-combos torabo-reserved-layers"
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart input-encoder input-trackpad-ext-split torabo-encoder-btn-split"
+    snippet: "studio-rpc-usb-uart input-encoder input-trackpad-ext-split torabo-encoder-btn-split torabo-led-ext-periph"
     artifact-name: torabo_tsuki_lp_left_peripheral
   - board: bmp_boost
     shield: settings_reset
