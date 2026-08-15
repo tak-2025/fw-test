@@ -29,6 +29,9 @@ manifest:
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-driver-iqs7211e
+      remote: tak-2025
+      revision: torabo-tsuki
     - name: torabo-tsuki_ext_FW
       remote: tak-2025
       revision: main
