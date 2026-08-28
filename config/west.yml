@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/tak-2025  
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: tak-2025
+      revision: dev
       import: app/west.yml
     - name: zmk-component-bmp-boost
       remote: sekigon-gonnoc
