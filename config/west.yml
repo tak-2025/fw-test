@@ -33,5 +33,7 @@ manifest:
     - name: torabo-tsuki_ext_FW
       remote: tak-2025
       revision: main
+    - name: zmk-driver-kscan-4-direction-switch
+      remote: sekigon-gonnoc
   self:
     path: config
