@@ -1,12 +1,13 @@
 include:
   - board: bmp_boost
     shield: torabo_tsuki_lp_right
-    snippet: "studio-rpc-usb-uart split-central input-trackball input-listener input-trackpad-ext torabo-trackpad-live-ext input-split-listener input-encoder-recv torabo-encoder-live torabo-encoder-btn-recv torabo-trackpad-live-split torabo-led-live torabo-caps torabo-rpc-tunnel torabo-timing torabo-live-feed torabo-trackball torabo-macros torabo-combos torabo-reserved-layers"
-    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DTORABO_RESERVED_LAYERS=10"
+    snippet: "studio-rpc-usb-uart split-central kscan-4-direction-switch torabo-sw4 torabo-dial-recv input-trackball input-listener input-split-listener torabo-trackpad-live torabo-rot-sensors torabo-encoder-live torabo-dial-bind torabo-rot-btn torabo-led-live torabo-ext-rail torabo-caps torabo-rpc-tunnel torabo-timing torabo-live-feed torabo-trackball torabo-macros torabo-combos torabo-reserved-layers"
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DTORABO_ROT_BTN_STD=0;-DTORABO_ROT_BTN_EXT=0;-DTORABO_ROT_BTN_PSTD=1;-DTORABO_ROT_BTN_PEXT=0;-DTORABO_TP_LIVE=2;-DTORABO_SW4_SLOT=2;-DTORABO_SW4_SIDE=2;-DTORABO_SW4_ORIENT=2;-DTORABO_ROT_COUNT=1;-DTORABO_ROT0=3;-DTORABO_ROT_IDX_PSTD=0;-DTORABO_DIAL_SLOT=3;-DTORABO_RESERVED_LAYERS=10;-DTORABO_RL_KEYS=49"
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
-    snippet: "studio-rpc-usb-uart input-encoder input-trackpad-ext-split torabo-encoder-btn-split torabo-led-ext-periph torabo-timing-split"
+    snippet: "studio-rpc-usb-uart kscan-4-direction-switch torabo-sw4 torabo-dial torabo-rot-btn input-trackpad-ext torabo-rot-sensors torabo-led-ext-periph torabo-timing-split"
+    cmake-args: -DDTS_EXTRA_CPPFLAGS="-DTORABO_ROT_BTN_STD=2;-DTORABO_ROT_BTN_EXT=0;-DTORABO_ROT_BTN_PSTD=0;-DTORABO_ROT_BTN_PEXT=0;-DTORABO_PAD_EXT_ROLE=2;-DTORABO_PAD_EXT_REG=0;-DTORABO_PAD_EXT_KIND=1;-DTORABO_SW4_SLOT=0;-DTORABO_SW4_SIDE=1;-DTORABO_ROT_COUNT=1;-DTORABO_ROT0=1"
     artifact-name: torabo_tsuki_lp_left_peripheral
   - board: bmp_boost
     shield: settings_reset

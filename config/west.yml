@@ -30,10 +30,10 @@ manifest:
     - name: zmk-driver-iqs7211e
       remote: tak-2025
       revision: torabo-tsuki
-    - name: torabo-tsuki_ext_FW
-      remote: tak-2025
-      revision: main
     - name: zmk-driver-kscan-4-direction-switch
       remote: sekigon-gonnoc
+    - name: torabo-tsuki_ext_FW
+      remote: tak-2025
+      revision: dial-studio
   self:
     path: config
