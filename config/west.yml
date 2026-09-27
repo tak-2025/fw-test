@@ -32,6 +32,9 @@ manifest:
       revision: torabo-tsuki
     - name: zmk-driver-kscan-4-direction-switch
       remote: sekigon-gonnoc
+    - name: zmk-driver-hires-dial
+      remote: sekigon-gonnoc
+      revision: master
     - name: torabo-tsuki_ext_FW
       remote: tak-2025
       revision: dial-studio
